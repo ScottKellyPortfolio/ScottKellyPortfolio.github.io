@@ -1,0 +1,160 @@
+head {
+}
+
+
+
+#headshotpic {
+	float: right;
+	width: 800px;
+	height: 1067px;
+	border: 1px solid black;
+	margin-left: 30px;
+	margin-right: 45px;
+	margin-bottom: 50px;
+}
+
+#mepic {
+	height: 400px;
+	border: 1px solid black;
+	margin-top: 50px;
+	margin-bottom: 200px;
+}
+
+#infospace {
+	margin-top: 25;
+	margin-bottom: 50px;
+}
+
+#mailpic {
+	width: 600px;
+	height: 384px;
+	float: left;
+	margin-right: 45px;
+	margin-left: 45px;
+	margin-bottom: 45px;
+	border: 1px solid black;
+}
+
+#pltwpic {
+	width: 600px;
+	float: left;
+	margin-top: 225px;
+	border: 1px solid black;
+}
+
+.leftSideProject {
+	float: left;
+	width: 600px;
+	text-align: center;
+	margin-left: 250px;
+	font-size: 20px;
+	margin-bottom: 200px;
+}
+
+.rightSideProject {
+	float: right;
+	width: 400px;
+	text-align: center;
+	margin-right: 250px;
+	font-size: 20px;
+	margin-bottom: 100px;
+}
+
+#smcpic {
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 125px;
+	float: right;
+}
+
+#elevennotepic {
+	width: 600px;
+	float: left;
+	margin-top: 225px;
+	border: 1px solid black;
+}
+
+#weightandbalancepic {
+	width: 400px;
+	border: 1px solid black;
+	margin-top: 125px;
+	float: right;
+	transform: rotate(180deg);
+}
+
+#weightandbalancemockuppic{
+	display: block;
+	border: 1px solid black;
+	margin-top: 125px;
+    margin-left: auto;
+    margin-right: auto 
+    margin-bottom: 50px;
+}
+
+#widgets {
+	margin-left: 1350px;
+}
+
+.spotifyvids {
+	margin-bottom: 70px;
+}
+
+.newparagraph {
+	margin-top: 50px;
+	margin-left: 45px;
+	font-size: 20px;
+}
+
+.sidemargin {
+	font-size: 20px; 
+	margin-left: 50px;
+}
+
+h1 {
+	font-size: 60px;
+}
+/*
+img {
+	width: 400px;
+	height: 400px;
+	border: 2px solid black;
+	margin-top: 50px;
+}
+*/
+body {
+	background-image: url("oldpaper.jpg");
+	background-color: #DEB985;
+	background-attachment: fixed;
+	background-size: cover;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
