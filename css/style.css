@@ -264,6 +264,7 @@ header.header nav i:hover { color: #103848; }
 		font-weight: bold;
 		margin-bottom: 20px;
 		color: #ffd511;
+		text-shadow:2px 2px #000000;
 		-webkit-backface-visibility: hidden;
 	}
 
@@ -272,6 +273,7 @@ header.header nav i:hover { color: #103848; }
 		margin-bottom: 60px;
 		font-family: 'Lato', Helvetica, Arial, sans-serif;
 		color: #eee;
+		text-shadow:1px 1px #000000;
 		font-weight: 300;
 	}
 
