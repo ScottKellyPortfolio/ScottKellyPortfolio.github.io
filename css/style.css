@@ -27,7 +27,7 @@ h1,
 h2,
 .h1,
 .h2 {
-  font-family: "Pacifico", Helvetica, Arial, sans-serif;
+  /* font-family: "Pacifico", Helvetica, Arial, sans-serif; */
 }
 
 blockquote { margin: 50px 0; }
@@ -629,12 +629,12 @@ header.header nav i:hover { color: #103848; }
 #contact .row .row { margin-top: 20px !important; }
 #contact .row h2 { margin-top: 0; color: #fff; }
 #contact .row .col-md-5 h4 { padding-top: 30px; color: #fff; }
-#contact #contact-form ul { margin-top: 45px; }
-#contact #contact-form  a.btn { margin-top: 15px; }
-#contact #contact-form  ul li { margin-bottom: 15px; }
+#contact .contact-form ul { margin-top: 45px; }
+#contact .contact-form  a.btn { margin-top: 15px; }
+#contact .contact-form  ul li { margin-bottom: 15px; }
 
 
-#contact #contact-form  ul li input, #contact #contact-form ul li textarea { 
+#contact .contact-form  ul li input, #contact .contact-form ul li textarea { 
 	width: 100%;
 	border: 1px solid #ffd511;
 	padding: 14px 16px;
@@ -643,7 +643,7 @@ header.header nav i:hover { color: #103848; }
 	color: white;
 }
 
-#contact #contact-form .btn {
+#contact .contact-form .btn {
 	border: 1px solid #ffd511;
 	font-weight: 300;
 }
