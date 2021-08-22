@@ -960,7 +960,11 @@ header.header nav i:hover { color: #103848; }
 	top: 7px;
   }
   
-  .navbar-fixed-top.shrink { padding-bottom: 0; }  
+  .navbar-fixed-top.shrink { padding-bottom: 0; } 
+  
+  .slides {
+	max-height: 700px;
+  }
   
   .slides .desc { 
 		text-align: center; 
