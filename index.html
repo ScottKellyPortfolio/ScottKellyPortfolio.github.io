@@ -111,7 +111,7 @@
 						<br>
 						Software Engineer
 					</h1>
-					<a href="documents/ScottKellyResume.pdf" class="btn btn-primary btn-lg">Resume</a>
+					<a href="documents/ScottKellyResume.pdf" target="_blank" class="btn btn-primary btn-lg">Resume</a>
 				</div>
 			</div>
 		</div>
@@ -139,7 +139,7 @@
 						<br>
 						<br>
 						Personally, I was born and raised in Brownsburg, Indiana, where I still currently reside. I was an early-on career-changer. My full-time working career started in the drag racing industry where I worked for the most succesful drag racing team ever, John Force Racing.
-						I had had an interest in cars and throughout highschool I had been involved in programs at school with super high mileage cars and misc engineering courses, and it was a dream jon for me.
+						I had had an interest in cars and throughout highschool I had been involved in programs at school with super high mileage cars and misc engineering courses, and it was a dream job for me.
 						I worked there for nearly 4 years, and in my time there, I had worked my way onto a team as a mechanic working on one of the nitro funny cars. As cool as that job was, I came to the conclusion that it wasn't sustainable for me.
 						<br>
 						<br>
@@ -225,6 +225,19 @@
 							</li>
 							<li>
 								<ul class="grid">
+									<li data-content="#holi-faith-project">
+										<div class="item col-lg-4 col-sm-4 col-xs-12">
+											<div class="item-wrap">
+												<figure class="colio-link">
+													<span class="project-thumb-text">COMING SOON!</span>
+													<figcaption>
+														<h3>HoliFaith Website</h3>
+														<span>Details</span>
+													</figcaption>
+												</figure>
+											</div>
+										</div>
+									</li>
 									<li data-content="#weight-and-balance-project">
 										<div class="item col-lg-4 col-sm-4 col-xs-12">
 											<div class="item-wrap">
@@ -246,50 +259,59 @@
 					<div id="the-breakes-project" class="colio-content">
 
 						<div class="portfolio-title">
-							<h4>Weight And Balance Calculator</h4>
+							<h4>The Breakes - Band Website</h4>
 							<span>Design, Development</span>
-						</div>
-						<div class="portfolio-desc">
-							<p>
-								The idea for this application came from my father, who pilots private charter jets. The
-								purpose of the app, is that it makes it simple to calculate the weight and balance of an
-								aircraft before it flies. It uses built in information for different aircraft to make it
-								simple to give your weights as inputs, and it will tell you if the aircraft is safe to
-								fly for the weights the user input. At this point in time, it is still a work in
-								progress, but is close to being finished.
-							</p>
 						</div>
 
 						<div class="portfolio-slider">
 							<ul class="slides">
 								<li><img src="img/Projects/thebreakes_main.png" alt="The Breakes home page" /></li>
+								<li><img src="img/Projects/thebreakes_shows.png" alt="The Breakes home page" /></li>
+								<li><img src="img/Projects/thebreakes_images.png" alt="The Breakes home page" /></li>
 								<li><img src="img/Projects/thebreakes_admin_home.png" alt="The Breakes admin editing interface" /></li>
 							</ul>
+						</div>
+
+						<div class="portfolio-desc">
+							<p>
+								What started as a basic, static HTML/CSS/JS website for my brothers band has turned into my largest single personal project. As I mentioned, this website is for my brothers band, The Breakes.
+								I created the site originally as a static website as a simple project when I was still very green in the world of coding. I worked with the band to design a fairly basic informational site and this is the result.
+								Though it looks similar to the first iteration, it has evolved into something far more.
+							</p>
+							<p>
+								As it was originally built as a static site, it meant that when anything needed changed, such as adding a show event or pictures or other info, I had to go and manually modify the HTML.
+								This wasn't exactly maintainable, so I set out working on the second iteration of the site. What I ended up creating was something that resembles a basic CMS (Content Management System).
+								While a very basic CMS, it allowed the guys, all 3 of them, access and the ability to add and manage all of their own content. This meant no more coming to me for modifying HTML.
+								The site is built using ASP.NET MVC. It uses Entity Framework and a code-first pattern for all data transactions. Most of the HTML/CSS/JS was carried over, and modified to work with dynamic rendering with MVC.
+								This brought along with it a few hurdles. While I was vaguely familiar with hosting a website, I hadn't full on hosted my own website. I had to figure out what to do for a hosting provider, DNS hosting, a database, the whole nine-yards.
+								Though a struggle for a while, and more than one long night, it was greatly helpful in helping me understand how a website fundamentally works.
+							</p>
+							<p>
+								The latest iteration was sort-of built on top of what was there, but not really. For my latest challenge, I decided to rebuild the site using .NET Core. While that may not sound very different from the framework I used before, functionally, it was quite different.
+								This being my first proper attempt at a project using .NET Core, I decided to go all in. I re-wrote the views (HTML pages) to use more modern tag-helpers, started using Razor Pages, View Components, and still combined regular MVC patterns. There's a dab of React in there as well ;)
+								I reworked what I needed to change to make authentication work with .NET Core, but I also created a full REST API with full CRUD operations for the miscellaneous aspects of the 'CMS'.
+								This REST API is what I would use for my next major project; The Breakes Manager, a mobile app to manager the website content.
+							</p>
 						</div>
 
 						<article class="col-md-4 col-sm-4">
 							<h5>The Challenge</h5>
 							<p>
-								Simplify calculating the various weights of small aircraft to make calculating the weight
-								and balance easier. Make it easy to use and make it mobile friendly so as to avoid
-								needing a desktop or laptop.
+								Provide a modern experience, for both site consumers and content admins. This means a responsive website, with features for admins to management content with little assistance from IT/Engineering (me).
 							</p>
 						</article>
 
 						<article class="col-md-4 col-sm-4">
 							<h5>The Solution</h5>
 							<p>
-								A responsive web application that can be used on mobile devices to increase ease and
-								productivity. Replaces the need to use a computer or desktop application.
+								A website that allows content admins the ability to maintain, modify and manage all content aspects of the website. The current iteration is built on a foundation .NET Core, with a myraid of other technologies.
 							</p>
 						</article>
 
 						<article class="col-md-4 col-sm-4">
 							<h5>The Result</h5>
 							<p>
-								Still to come! This is a work in progress project as I am the only person working on it.
-								Unfortunately because it is a personal project, it takes the backseat for more pressing
-								issues.
+								Check it out here <a href="https://thebreakes.com/" >TheBreakes.com</a>. I'm pretty proud of this site, particularly the content management side of things. I've got more things planned for the future, so this won't be the final iteration.
 							</p>
 						</article>
 
@@ -298,40 +320,42 @@
 					<div id="the-breakes-manager-project" class="colio-content">
 
 						<div class="portfolio-title">
-							<h4>NoteJar</h4>
+							<h4>The Breakes Manager</h4>
 							<span>Design, Development</span>
-						</div>
-						<div class="portfolio-desc">
-							<p></p>
 						</div>
 
 						<div class="portfolio-slider">
 							<ul class="slides">
-								<li><img src="img/notejar2.png" alt="" /></li>
-								<li><img src="img/notejar3.png" alt="" /></li>
-								<li><img src="img/notejar1.png" alt="" /></li>
-								<li><img src="img/notejar4.png" alt="" /></li>
+								<!-- <li><img src="img/notejar2.png" alt="" /></li> -->
 							</ul>
+						</div>
+						
+						<div class="portfolio-desc">
+							<p>
+								I know, it's not exactly a creative name up front, but if you think about it, it's kinda like having a manager for the band, just in digital form! Right?! No? Well either way, name aside, this is the mobile app I developed for The Breakes website.
+								Assuming you've made it this far after having read the project notes about The Breakes band website, you may know I briefly talked about a mobile app. This app was a self proposed challenge as a way to get into the world of mobile app development.
+								The purpose of this site is to provide a mobile management experience for the band. While it may be a bit overkill, as the main website backend is responsive and can be used on a phone, this is a more streamlined process.
+							</p>
+							<p>
+								Being a primarliy Microsoft technologies guy, I chose the obvious place to start with this; Xamarin.Forms. I set out building this using the REST API I developed during the latest iteration of the website build.
+								The website uses a customized, scaffolded, Identity Server pattern for authenticating users and OAuth for the workflow. This meant that I had to adopt that with this mobile app to gain access to the API.
+								I took an approach of caching a users login information to their device to avoid having to login everytim they open the app. Within the app, they have all of the standard management options as the website.
+								This has the advantage for uploading different types of media such as videos and images, as they can upload directly from their phones.
+								The app is not entirely finished, and I envision it going on for a while, but it's been a good experience. 
+							</p>
 						</div>
 
 						<article class="col-md-6 col-sm-6">
 							<h5>The Challenge</h5>
 							<p>
-								This was a project I did during the 9 week Accelerated Learning Program at the Eleven
-								Fifty Academy. We were instructed to take and existing project, a very simple note
-								taking CRUD (Create, Read, Update, Delete) application, and enhance functionality,
-								design, and features of the app.
+								Self proposed, this was a personal goal I'd wanted to tackle for a while. Learning a new platform and many new patterns was quite a daunting task.
 							</p>
 						</article>
 
 						<article class="col-md-6 col-sm-6">
-							<h5>The Solution</h5>
+							<h5>The Result</h5>
 							<p>
-								The existing project only involved notes like the second screenshot. We decided to use a
-								bootstrap theme to change the basic color and look of the website. We completely changed
-								the home screen to include a picture of a cat in wonder, but we also added many quotes
-								and testimonials from our classmates. We also added a contact page which was functional
-								and forwarded emails sent through the form to me as well as a calender on the note page.
+								
 							</p>
 						</article>
 					</div>
@@ -366,6 +390,59 @@
 
 						<div class="portfolio-title">
 							<h4>Weight And Balance Calculator</h4>
+							<span>Design, Development</span>
+						</div>
+						<div class="portfolio-desc">
+							<p>
+								The idea for this application came from my father, who pilots private charter jets. The
+								purpose of the app, is that it makes it simple to calculate the weight and balance of an
+								aircraft before it flies. It uses built in information for different aircraft to make it
+								simple to give your weights as inputs, and it will tell you if the aircraft is safe to
+								fly for the weights the user input. At this point in time, it is still a work in
+								progress, but is close to being finished.
+							</p>
+						</div>
+
+						<div class="portfolio-slider">
+							<ul class="slides">
+								<li><img src="img/AircraftBalance1.jpg" alt="" /></li>
+								<li><img src="img/WaBWeb1.png" alt="" /></li>
+								<li><img src="img/WaBMobile1.png" alt="" /></li>
+							</ul>
+						</div>
+
+						<article class="col-md-4 col-sm-4">
+							<h5>The Challenge</h5>
+							<p>
+								Simplify calculating the various weights of small aircraft to make calculating the weight
+								and balance easier. Make it easy to use and make it mobile friendly so as to avoid
+								needing a desktop or laptop.
+							</p>
+						</article>
+
+						<article class="col-md-4 col-sm-4">
+							<h5>The Solution</h5>
+							<p>
+								A responsive web application that can be used on mobile devices to increase ease and
+								productivity. Replaces the need to use a computer or desktop application.
+							</p>
+						</article>
+
+						<article class="col-md-4 col-sm-4">
+							<h5>The Result</h5>
+							<p>
+								Still to come! This is a work in progress project as I am the only person working on it.
+								Unfortunately because it is a personal project, it takes the backseat for more pressing
+								issues.
+							</p>
+						</article>
+
+					</div>
+
+					<div id="holi-faith-project" class="colio-content">
+
+						<div class="portfolio-title">
+							<h4>HoliFaith Website</h4>
 							<span>Design, Development</span>
 						</div>
 						<div class="portfolio-desc">

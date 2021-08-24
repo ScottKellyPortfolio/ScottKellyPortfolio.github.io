@@ -315,7 +315,14 @@ header.header nav i:hover { color: #103848; }
 #works { background-color: #ededed; }
 #works .flexslider .item { margin-bottom: 30px; }
 #works .flexslider { margin: 40px 0 125px; }
+#works figure.colio-link { min-height: 175px; text-align: center; }
+#works figure.colio-link span.project-thumb-text { font-weight: bold; font-size: 1.5vw; }
 #works .colio-link:hover, #works .colio-link:focus { cursor: pointer; }
+
+.coolio-link .project-thumb-text {
+	min-height: 175px;
+	font-size: large;
+}
  
 .grid li {
     text-align: left;
