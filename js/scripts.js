@@ -19,24 +19,6 @@ $(function () {
 });
 
 /* ====================================================================== */
-/*	Contact Form
-/* ====================================================================== */
-
-$(document).ready(function () {
-	$('#contact-form').simpleContactForm({
-		subject: 'New message from your website',
-		errorClass: 'error',
-		success: function () {
-			$('#success').html("<p><strong>Message sent!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque sit amet nisl nec diam.</p>");
-			$('#success')
-				.fadeIn(500)
-				.delay(2000)
-				.fadeOut(500);
-		}
-	});
-});
-
-/* ====================================================================== */
 /*	Flexslider
 /* ====================================================================== */
 
@@ -99,57 +81,6 @@ $(document).ready(function () {
 });
 
 /* ====================================================================== */
-/*	Interesting Facts
-/* ====================================================================== */
-
-jQuery(function ($) {
-	// custom formatting example
-	$('.timer').data('countToOptions', {
-		formatter: function (value, options) {
-			return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-		}
-	});
-
-	// start all the timers
-	$('#stats').waypoint(function () {
-		$('.timer').each(count);
-	},
-		{
-			offset: 245,
-			triggerOnce: true
-		});
-
-	function count(options) {
-		var $this = $(this);
-		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-		$this.countTo(options);
-	}
-
-});
-
-/* ====================================================================== */
-/*	Waypoints
-/* ====================================================================== */
-(jQuery)(function ($) {
-	if ($(".animated")[0]) {
-		jQuery('.animated').css('opacity', '0');
-	}
-
-	$('.triggerAnimation').waypoint(function () {
-		var animation = $(this).attr('data-animate');
-		$(this).css('opacity', '');
-		$(this).addClass("animated " + animation);
-
-	},
-		{
-			offset: '80%',
-			triggerOnce: true
-		}
-	);
-
-});
-
-/* ====================================================================== */
 /*	bxslider
 /* ====================================================================== */
 
@@ -195,20 +126,12 @@ $(document).scroll(function () {
 	$(".menu_target").each(function () {
 		id_slide = $(this).attr("id");
 		height = $(this).css("height");
-		if ($(this).offset().top <= pos + 100) {
+		var itemLoc = $(this).offset().top;
+		if (itemLoc <= pos + 265) {
 			$(".nav li").removeAttr("id");
 			$(".nav li").find("a[href^='#" + id_slide + "']").parent().attr("id", "current_menu_item");
 		}
 	});
-});
-
-$(document).ready(function () {
-	// Scroll the whole document
-	$('.nav, .intro').localScroll({
-		target: 'body',
-		offset: -67
-	});
-
 });
 
 
